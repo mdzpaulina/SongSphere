@@ -1,23 +1,28 @@
 #root {
     max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
     text-align: center;
     }
 
-
+.contitulo {
+    width: 1536px;
+    height: 729.999px;
+    background-image: url('./background.png');
+    background-size: cover; /* O 'contain' si prefieres que la imagen se ajuste */
+    background-position: center;
+}
 .contitulo h1 {
-    margin-top: -40px;
+    margin-top: 0;
     color: #61dafbaa;
     font-size: 60px;
     }     
 
 .contitulo h2 {
+    margin-top: 0;
     color: lightgray;
     }
 
 .icon {
     width: 350px;
-    margin: -20px auto;
+    margin: 0 auto;
     display: block;
     }
