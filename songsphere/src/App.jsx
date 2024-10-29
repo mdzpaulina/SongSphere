@@ -1,15 +1,19 @@
-import './App.css'
 import React from 'react';
-import icon from './icon.png';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import SecondPage from './SecondPage';
 
-function app(){
+function App() {
   return (
-    <div className='contitulo'>
-      <img src={icon} alt='icon' className='icon'/>
-      <h1>SongSphere</h1>
-      <h2>La Web para la comodidad de tus oidos.</h2>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} /> {/* Página inicial */}
+        <Route path="/second" element={<SecondPage />} /> {/* Segunda página */}
+      </Routes>
+    </Router>
   );
 }
 
-export default app;
+export default App;
+
+

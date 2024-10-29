@@ -1,12 +1,19 @@
 import React from 'react';
-import './home.css';
+import { useNavigate } from 'react-router-dom';
 
-function home(){
-    return(
-        <div>
-            <head>
-                Hola
-            </head>
-        </div>
-    )
+function Home() {
+  const navigate = useNavigate(); // Hook de navegación
+
+  const goToSecondPage = () => {
+    navigate('/second'); // Redirige a la segunda página
+  };
+
+  return (
+    <div>
+      <h1>Hola Mundo</h1>
+      <button onClick={goToSecondPage}>Ir a la segunda página</button> {/* Botón para navegar */}
+    </div>
+  );
 }
+
+export default Home;
